@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Valuta Omregner </title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script src="tabs.js"></script>
+        <script src="calculator.js"></script>
+    </head>
+    <body>
+        <nav>
+            <span> Valuta Omregner </span>
+            <div>
+                <a class="calc" href="#calcbox"> Lommeregner </a>
+                <a class="kurs" href="#kursbox"> Valutakurser </a>
+            </div>             
+        </nav>
+        <main>
+            <div class="calcbox">
+                <h1> Valuta Lommeregner </h1>
+                <p> Skal du på ferie og ved ikke hvor mange penge du skal tage med? Så tjek ind her!</p>
+                <p> Indtast mængden af danske kroner du er villig til at omregne, og få valutamængden igen! </p> 
+                <input type="number">
+                <select>
+                    <option value="AUD"> Australske Dollar </option>
+                    <option value="BGN"> Bulgariske Lev </option>
+                    <option value="BRL"> Brasillianske Real </option>
+                    <option value="CAD"> Canadiske Dollars </optio n>
+                    <option value="CHF"> Schweiziske Franc </option>
+                    <option value="CNY"> Kinesiske Yuan Renminbi </option>
+                    <option value="CZK"> Tjekkiske Koruna </option>
+                    <option value="EUR"> Euro </option>
+                    <option value="GBP"> Britiske Pund </option>
+                    <option value="HKD"> Hongkong Dollar </option>
+                    <option value="HRK"> Kroatiske Kuna </option>
+                    <option value="HUF"> Ungarnske Forint </option>
+                    <option value="IDR"> Indonesiske Rupiah </option>
+                    <option value="ILS"> Israelske Shekels </option>
+                    <option value="INR"> Indiske Rupies </option>
+                    <option value="ISK"> Islandske Kroner </option>
+                    <option value="JPY"> Japanske Yen </option>
+                    <option value="KRW"> Sydkoreanske Won </option>
+                    <option value="MXN"> Mexicanske Peso </option>
+                    <option value="MYR"> Malaysiske Ringgit </option>
+                    <option value="NOK"> Norske Kroner </option>
+                    <option value="NZD"> New Zealandske Dollar </option>
+                    <option value="PHP"> Fillipinske Peso </option>
+                    <option value="PLN"> Polske Zloty </option>
+                    <option value="RON"> Rumænske Lei </option>
+                    <option value="RUB"> Russiske Rubel </option>
+                    <option value="SEK"> Svenske Kroner </option>
+                    <option value="SGD"> Singapore Dollar </option>
+                    <option value="THB"> Thailandske Baht </option>
+                    <option value="TRY"> Tyrkiske Lira </option>
+                    <option value="USD"> Amerikanske Dollar </option>
+                    <option value="XDR"> SDR (Beregnet **) </option>
+                    <option value="ZAR"> Sydafrikanske Rand </option>
+                </select>
+                <input type="submit" value="Udregn">
+                <br> <br>
+            </div>
+            <div class="kursbox" hidden>
+                <table id="kurstable">
+                    <thead>
+                        <tr>
+                            <th> Landkode </th>
+                            <th> Valuta </th>
+                            <th> Kurs </th> 
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td> DKK </td>
+                        <td> Danske Kroner </td>
+                        <td> 100,00 </td>
+                    </tr> 
+                    <tbody id="valutas" class="valutas">
+                        <tr>
+                            <td> Don't look at me </td> 
+                        </tr>
+                    </tbody>                    
+                </table>
+            </div>
+        </main>
+    </body>
+</html>
