@@ -40,6 +40,11 @@ main {
     text-align: center;
 }
 
+#result {
+    font-size: 150%;
+    font-weight: bold;
+}
+
 .kursbox table {
     text-align: center;
     width: 50%;

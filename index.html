@@ -20,45 +20,14 @@
             <div class="calcbox">
                 <h1> Valuta Lommeregner </h1>
                 <p> Skal du på ferie og ved ikke hvor mange penge du skal tage med? Så tjek ind her!</p>
-                <p> Indtast mængden af danske kroner du er villig til at omregne, og få valutamængden igen! </p> 
-                <input type="number">
-                <select>
-                    <option value="AUD"> Australske Dollar </option>
-                    <option value="BGN"> Bulgariske Lev </option>
-                    <option value="BRL"> Brasillianske Real </option>
-                    <option value="CAD"> Canadiske Dollars </optio n>
-                    <option value="CHF"> Schweiziske Franc </option>
-                    <option value="CNY"> Kinesiske Yuan Renminbi </option>
-                    <option value="CZK"> Tjekkiske Koruna </option>
-                    <option value="EUR"> Euro </option>
-                    <option value="GBP"> Britiske Pund </option>
-                    <option value="HKD"> Hongkong Dollar </option>
-                    <option value="HRK"> Kroatiske Kuna </option>
-                    <option value="HUF"> Ungarnske Forint </option>
-                    <option value="IDR"> Indonesiske Rupiah </option>
-                    <option value="ILS"> Israelske Shekels </option>
-                    <option value="INR"> Indiske Rupies </option>
-                    <option value="ISK"> Islandske Kroner </option>
-                    <option value="JPY"> Japanske Yen </option>
-                    <option value="KRW"> Sydkoreanske Won </option>
-                    <option value="MXN"> Mexicanske Peso </option>
-                    <option value="MYR"> Malaysiske Ringgit </option>
-                    <option value="NOK"> Norske Kroner </option>
-                    <option value="NZD"> New Zealandske Dollar </option>
-                    <option value="PHP"> Fillipinske Peso </option>
-                    <option value="PLN"> Polske Zloty </option>
-                    <option value="RON"> Rumænske Lei </option>
-                    <option value="RUB"> Russiske Rubel </option>
-                    <option value="SEK"> Svenske Kroner </option>
-                    <option value="SGD"> Singapore Dollar </option>
-                    <option value="THB"> Thailandske Baht </option>
-                    <option value="TRY"> Tyrkiske Lira </option>
-                    <option value="USD"> Amerikanske Dollar </option>
-                    <option value="XDR"> SDR (Beregnet **) </option>
-                    <option value="ZAR"> Sydafrikanske Rand </option>
+                <p> Indtast mængden af udenlandsk valuta du gerne vil have med på rejsen, og se hvor mange kroner det sætter dig tilbage. </p> 
+                <input type="number" id="amount">
+                <select id="currency">
+                    <!-- JS fills Select Box-->
                 </select>
-                <input type="submit" value="Udregn">
+                <input type="submit" value="Udregn" id="udregn1">
                 <br> <br>
+                <span id="result"></span>
             </div>
             <div class="kursbox" hidden>
                 <table id="kurstable">
